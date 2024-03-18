@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery selector example</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("*").css("background-color","yellow")
+            $("h2,h4").css("background-color","white")
+            $("p").css("background-color","lightgreen")
+            $("#changecolor").css("background-color","gray")
+            $(".changecolor").css("background-color","cyan")
+        })
+    </script>
+</head>
+<body>
+    <h1>Examples</h1>
+    <h2>Website</h2>
+    <h4>Hello</h4>
+    <p>Helloworld</p>
+    <p id="changecolor">Helloworld</p>
+    <p class="changecolor">Helloworld</p>
+</body>
+</html>
