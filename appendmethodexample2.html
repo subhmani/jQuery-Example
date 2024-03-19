@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+               $("#unorderlist").append("<li> Hello </li>");
+            });
+        });
+    </script>
+   
+</head>
+<body>
+    <h1>Append Example</h1>
+    <button id="btn">Click</button>
+    <ul id="unorderlist">
+        <li>banana</li>
+    </ul>
+</body>
+</html>
