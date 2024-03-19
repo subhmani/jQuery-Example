@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#set").click(function(){
+               $("p").html($("#fruit").val());
+            });
+        });
+    </script>
+   
+</head>
+<body>
+    
+    <button id="set">Click</button>
+    <select id="fruit">
+        <option >apple</option>
+        <option >banana</option>
+        <option >Mango</option>
+        <option >papaya</option>
+
+    </select>
+   <p></p>
+</body>
+</html>
