@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("body").delegate("p","click",function(){
+            $(this).after("<p>Welocome</p>");
+           })
+        
+        });
+    </script>
+    <style>
+        body{
+            text-align: center;
+        }
+        p{
+            cursor: pointer;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example</h1><br><br>
+    <p>helloworld</p>
+</body>
+</html>
