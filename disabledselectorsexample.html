@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script>
+    $(document).ready(function(){
+        $("#btn").click(function(e){
+            $(":disabled").css("background-color","lightgreen");
+            e.preventDefault();
+        });
+    })
+   </script>
+   <style>
+    body{
+        text-align: center;
+    }
+   </style>
+</head>
+<body>
+    <h1>Example</h1>
+    <form>
+        <h3>This is a form</h3>
+        <input type="text" disabled="disabled" placeholder="First Name" ><br><br>
+        <input type="text"  placeholder="Last Name" ><br><br>
+        <input type="text" disabled="disabled" placeholder="Age" ><br><br>
+        <input type="text"  placeholder="Mobile No." ><br><br>
+        <input type="text" disabled="disabled" placeholder="Address" ><br><br>
+        <button id="btn">Click</button>
+    </form>
+</body>
+</html>
