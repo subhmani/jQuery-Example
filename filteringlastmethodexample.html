@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("div").last().css({"background-color":"lightcoral","color":"white"})
+            })
+        })
+    </script>
+    <style>
+        body{
+            text-align: center;
+
+        }
+        div{
+            border: 2px solid green;
+            background-color: lightgreen;
+            text-align: center;
+            padding: 2px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Example</h1>
+    <button id="btn">Click</button><br><br>
+    <div>
+        <label> This is label 1</label>
+    </div>
+    <div>
+        <label>This is label 2</label>
+    </div>
+    <div>
+        <label>This is label 3</label>
+    </div>
+    <div>
+        <label>This is label 4</label>
+    </div>
+   
+    
+   
+   
+    
+</body>
+</html>
